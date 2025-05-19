@@ -150,10 +150,8 @@
           "accnone": {
             "note": null,
             "versions": {
-              "Download here (Release version x64):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-latest.zip",
-              "Download here (Debug version x64):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-debug-latest.zip",
-              "Download here (Release version arm64):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-latest.zip",
-              "Download here (Debug version arm64):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-debug-latest.zip"
+              "Download here (Release version):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-latest.zip",
+              "Download here (Debug version):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-debug-latest.zip"
             }
           },
           "cuda.x": {
@@ -5941,7 +5939,7 @@
         "pip": {
           "accnone": {
             "note": null,
-            "command": "For x64: pip3 install torch torchvision torchaudio \n For arm64: pip3 install torch --index-url https://download.pytorch.org/whl/torch/"
+            "command": "pip3 install torch torchvision torchaudio"
           },
           "cuda.x": {
             "note": null,
@@ -5986,10 +5984,8 @@
           "accnone": {
             "note": null,
             "versions": {
-              "Download here (Release version x64):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.7.0%2Bcpu.zip",
-              "Download here (Debug version x64):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.7.0%2Bcpu.zip",
-              "Download here (Release version arm64):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.7.0%2Bcpu.zip",
-              "Download here (Debug version arm64):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.7.0%2Bcpu.zip"
+              "Download here (Release version):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.7.0%2Bcpu.zip",
+              "Download here (Debug version):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.7.0%2Bcpu.zip"
             }
           },
           "cuda.x": {
