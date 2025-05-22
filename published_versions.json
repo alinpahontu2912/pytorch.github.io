@@ -23,7 +23,7 @@
           },
           "rocm5.x": {
             "note": null,
-            "command": "pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm6.4"
+            "command": "pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm6.3"
           }
         },
         "libtorch": {
@@ -54,7 +54,7 @@
           "rocm5.x": {
             "note": null,
             "versions": {
-              "Download here (cxx11 ABI):": "https://download.pytorch.org/libtorch/nightly/rocm6.4/libtorch-cxx11-abi-shared-with-deps-latest.zip"
+              "Download here (cxx11 ABI):": "https://download.pytorch.org/libtorch/nightly/rocm6.3/libtorch-cxx11-abi-shared-with-deps-latest.zip"
             }
           }
         }
@@ -127,7 +127,10 @@
         "pip": {
           "accnone": {
             "note": null,
-            "command": "pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu"
+            "command": {
+              "x64": "pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu",
+              "arm64": "pip3 install --pre torch --index-url https://download.pytorch.org/whl/nightly/cpu"
+            }
           },
           "cuda.x": {
             "note": null,
@@ -150,8 +153,14 @@
           "accnone": {
             "note": null,
             "versions": {
-              "Download here (Release version):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-latest.zip",
-              "Download here (Debug version):": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-debug-latest.zip"
+              "Download here (Release version):": {
+                "x64": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-latest.zip",
+                "arm64": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-arm64-shared-with-deps-latest.zip"
+              },
+              "Download here (Debug version):": {
+                "x64": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-shared-with-deps-debug-latest.zip",
+                "arm64": "https://download.pytorch.org/libtorch/nightly/cpu/libtorch-win-arm64-shared-with-deps-debug-latest.zip"
+              }
             }
           },
           "cuda.x": {
@@ -5939,7 +5948,10 @@
         "pip": {
           "accnone": {
             "note": null,
-            "command": "pip3 install torch torchvision torchaudio"
+            "command": {
+              "x64": "pip3 install torch torchvision torchaudio",
+              "arm64": "pip3 install --pre torch --index-url https://download.pytorch.org/whl/cpu"
+            }
           },
           "cuda.x": {
             "note": null,
@@ -5984,8 +5996,14 @@
           "accnone": {
             "note": null,
             "versions": {
-              "Download here (Release version):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.7.0%2Bcpu.zip",
-              "Download here (Debug version):": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.7.0%2Bcpu.zip"
+              "Download here (Release version):": {
+                "x64": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.7.0%2Bcpu.zip",
+                "arm64": "https://download.pytorch.org/libtorch/cpu/libtorch-win-arm64-shared-with-deps-2.7.0%2Bcpu.zip"
+              },
+              "Download here (Debug version):": {
+                "x64": "https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.7.0%2Bcpu.zip",
+                "arm64": "https://download.pytorch.org/libtorch/cpu/libtorch-win-arm64-shared-with-deps-debug-2.7.0%2Bcpu.zip"
+              }
             }
           },
           "cuda.x": {
